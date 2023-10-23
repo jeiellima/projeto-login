@@ -25,7 +25,6 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 1.8em;
-    font-weight: 700;
 }
 
 p {
@@ -37,22 +36,26 @@ p {
 #login {
     width: 300px;
     height: 500px;
-    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    background-color: white;
     margin: auto;
     box-shadow: 0px 0px 15px #260712;
     border-radius: 15px;
 }
 
 #login > #imagem {
-    background: #260712 url(../images/layer.jpg) top center no-repeat fixed;
+    display: block;
+    background: #260712 url(../images/layer.jpg) top center no-repeat;
     background-size: cover;
     height: 200px;
 }
 
-#login > #form {
+#login > #forms {
+    display: block;
     padding: 10px;
 }
