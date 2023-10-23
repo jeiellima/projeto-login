@@ -20,21 +20,20 @@
                 <p>Seja bem-vindo(a) novamente!<br> Faça o login para acessar sua conta.</p>
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <span class="material-symbols-outlined">person</span>
-                        <label for="ilogin"></label>
+                        <span class="material-symbols-outlined" id="symbolperson">person</span>
+                        <label for="ilogin">Login</label>
                         <input type="email" name="login" id="ilogin" placeholder="digite seu e-mail" autocomplete="email">
                     </div>
                     <div class="campo">
-                        <span class="material-symbols-outlined">password</span>
-                        <label for="ipass"></label>
+                        <span class="material-symbols-outlined" id="symbolpass">password</span>
+                        <label for="ipass">Senha</label>
                         <input type="password" name="senha" id="ipass" placeholder="digite sua senha" autocomplete="current-password" minlength="8" maxlength="20">
                     </div>
                     <input type="submit" value="Entrar" id="enter">
                     <a href="esqueci.html">
                         Esqueceu a senha?
-                        <span class="material-symbols-outlined">help</span>
+                        <span id="help" class="material-symbols-outlined">help</span>
                     </a>
-                    
                 </form>
             </div>
         </section>

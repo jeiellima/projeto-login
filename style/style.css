@@ -23,6 +23,7 @@ main {
 }
 
 #forms h1 {
+    margin-top: 10px;
     text-align: center;
     margin-bottom: 10px;
     font-size: 1.5em;
@@ -47,13 +48,15 @@ main {
     margin: auto;
     box-shadow: 0px 0px 15px #260712;
     border-radius: 15px;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 #login > #imagem {
     display: block;
-    background: #260712 url(../images/layer.jpg) top center no-repeat;
+    background: #260712 url(../images/layer.jpg) center center no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 150px;
 }
 
 #login > #forms {
@@ -61,10 +64,48 @@ main {
     padding: 10px;
 }
 
+.campo > .material-symbols-outlined {
+    color: #dd7970;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+form > .campo {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #260712;
+    border-radius: 10px;
+    margin: 5px 0px;
+
+}
+
+.campo > input {
+    color: #260712;
+    background-color:#e09b94;
+    font-size: 1em;
+    font-weight: 700;
+    width: calc(100% - 45px);
+    transform: translateY(-12px);
+    height: 100%;
+    border: 1px solid #260712;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.campo > label {
+    display: none;
+}
+
 #enter {
     display: block;
-    padding: 10px 30px;
-    margin: 30px auto;
+    width: 100%;
+    height: 40px;
+
+    margin: 15px auto 5px auto;
+    cursor: pointer;
 
     background-color: #a1363f;
     color: white;
@@ -72,22 +113,36 @@ main {
     border-radius: 10px;
     border-style: none;
     border: 2px solid #260712;
-    box-shadow: 1px 1px 5px #2607128c;
     transition-duration: 0.3s;
 }
 
 #enter:hover {
-    background-color: #F2B988;
+    background-color: #dd7970;
     color: #73262C;
 }
 
 a {
     display: block;
     text-align: center;
-    margin-top: -15px;
-    font-size: 0.94em;
-
-
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: auto;
+    text-decoration: none;
     color: #a1363f;
+    border: 1px solid #a1363f;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    transition-duration: .2s;
+}
 
+a:hover {
+    background-color:#e09b94;
+    color: white;
+}
+
+#help {
+    font-size: 1.3em;
+    color: #a1363f;
 }
