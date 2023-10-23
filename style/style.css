@@ -7,6 +7,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Comfortaa', sans-serif;
+    color: #260712;
 }
 
 body, html {
@@ -21,16 +22,16 @@ main {
     width: 100vw;
 }
 
-h1 {
+#forms h1 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
-p {
+#forms p {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #login {
@@ -58,4 +59,35 @@ p {
 #login > #forms {
     display: block;
     padding: 10px;
+}
+
+#enter {
+    display: block;
+    padding: 10px 30px;
+    margin: 30px auto;
+
+    background-color: #a1363f;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    border-style: none;
+    border: 2px solid #260712;
+    box-shadow: 1px 1px 5px #2607128c;
+    transition-duration: 0.3s;
+}
+
+#enter:hover {
+    background-color: #F2B988;
+    color: #73262C;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: -15px;
+    font-size: 0.94em;
+
+
+    color: #a1363f;
+
 }
